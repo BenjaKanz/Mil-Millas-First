@@ -146,13 +146,19 @@ body {
 }
 
 
-.grid__fulano{
+.grid__fulano {
     grid-area: fulano;
     display: flex;
     border-bottom: white 2px solid;
     flex-direction: column;
     align-items: center;
     color: #A30008;
+    transition: transform 0.5s;
+}
+
+
+.grid__fulano:hover{
+    transform: translateY(-10px);
 }
 
 
@@ -163,7 +169,14 @@ body {
     flex-direction: column;
     align-items: center;
     color: #A30008;
+    transition: transform 0.5s;
 }
+
+
+.grid__mengano:hover{
+    transform: translateY(-10px);
+}
+
 
 
 .grid__zutano{
@@ -173,7 +186,14 @@ body {
     flex-direction: column;
     align-items: center;
     color: #A30008;
+    transition: transform 0.5s;
 }
+
+
+.grid__zutano:hover{
+    transform: translateY(-10px);
+}
+
 
 
 .flex__img{
@@ -223,6 +243,7 @@ body {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    transition: transform 0.3s;
 }
 
 
@@ -266,6 +287,11 @@ body {
     padding: 15px;
     border-radius: 30px;
     text-align: center;
+}
+
+
+.card:hover{
+    transform: translateY(-10px) translateX(-5px);
 }
 
 
