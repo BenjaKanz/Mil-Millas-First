@@ -1,0 +1,381 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+
+header {
+    font-family: 'Bree Serif', serif;
+    background-color:#A30008;
+}
+
+
+p {
+    font-size: 16px;
+    letter-spacing: normal;
+    line-height: 1.5;
+    color: #404040;
+}
+
+
+h1{
+    margin-left: 10px;
+}
+
+
+body {
+    font-family: 'Bree Serif', serif;
+    font-family: 'Source Serif Pro', serif;
+    background-color: #1f2124;
+    font-size: 2rem;
+}
+
+
+.headers{
+    margin: 5px;
+    display: grid;
+    grid-template-areas:
+        "titulo     .         navbars"
+        "redes      musica    buscar";
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,0.3fr);
+
+}
+
+
+.headers__musica{
+    display: flex;
+    grid-area: musica ;
+    justify-content: center;
+}
+
+
+.headers__titulo{
+    display: flex;
+    grid-area: titulo;
+    flex-direction: column;
+}
+
+
+.headers__redes{
+    display: flex;
+    grid-area: redes;
+    align-items: flex-end;
+
+}
+
+.headers__redes img {
+    margin: 0px 10px;
+}
+
+
+.headers__buscar{
+    display: flex;
+    grid-area: buscar;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    grid-area: navbars;
+}
+
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul li{
+    margin: 10px;
+    border-bottom: ridge black 2px;
+}
+
+
+.navbar li a{
+    font-size: 2rem;
+    color: black;
+}
+
+
+.titulo__pr {
+    font-size: 7rem;
+    font-style: italic;
+    line-height: 0.8;
+    color: aliceblue;
+}
+
+
+.titulo__sec{
+    font-size: 2rem;
+    line-height: 0.5;
+    margin-left: 10px;
+}
+
+
+.titulos {
+    font-size: 3rem;
+    font-style: italic;
+    background-color: #A30008;
+    border: 5px solid black;
+    margin: 30px 30px 15px 0px;
+}
+
+
+.grid__presentacion{
+    display: grid;
+    grid-template-areas: 
+        "texto  . fulano  mengano  zutano";
+        grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+        align-items: center;
+        gap: 10px;
+        margin: 20px;
+}
+
+
+.grid__fulano{
+    grid-area: fulano;
+    display: flex;
+    border-bottom: white 2px solid;
+    flex-direction: column;
+    align-items: center;
+    color: #A30008;
+}
+
+
+.grid__mengano{
+    grid-area: mengano;
+    display: flex;
+    border-bottom: white 2px solid;
+    flex-direction: column;
+    align-items: center;
+    color: #A30008;
+}
+
+
+.grid__zutano{
+    grid-area: zutano;
+    display: flex;
+    border-bottom: white 2px solid;
+    flex-direction: column;
+    align-items: center;
+    color: #A30008;
+}
+
+
+.flex__img{
+    display: flex;
+    justify-content: center;
+    background-color: #A30008;
+    width: 100%;
+}
+
+
+.imgoptfooter{
+    width: 300px;
+    height: 100px;
+    margin: 10px;
+}
+
+
+.img__fondo{
+    background-image: url(./Multimedia/img/flowers.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    grid-area: texto;
+    margin: 10px 10px;
+    color:black;
+}
+
+
+.negrita{
+    font-weight: bolder;
+}
+
+
+.imgOption{
+    margin: 20px 10px 10px 100px;
+    width: 768px;
+    height: 420px;
+}
+
+
+.card{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 50px -12px white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+.card__header{
+    position: relative;
+}
+
+
+.card__header small{
+
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #fff;
+    padding: 5px;
+    position: absolute;
+    border-bottom-left-radius: 8px;
+    right: 0px;
+}
+
+
+.card__header img{
+    width: 100%;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+
+
+.card__title{
+    margin-bottom: 10px;
+}
+
+
+.card__description{
+    margin-bottom: 30px;
+}
+
+
+.card__link{
+    font-weight: bold;
+    color: black;
+    background-color: darkred;
+    padding: 15px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+
+.eventos__grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+    margin: 20px;
+}
+
+
+.evento{
+    background-color: #CCCAC8;
+    border:solid 3px white;
+}
+
+
+.form{
+    margin: 2rem;
+    background-color: #A30008;
+}
+
+
+.hoteles{
+    background-color: #750156
+}
+
+
+.iconos__contacto{
+    width: 10rem;
+    height: 10rem;
+}
+
+
+.acerca{
+    background-image:url(./Multimedia/musica-img/orobanner.jpg);
+    background-repeat: repeat;
+    background-size: contain;
+    font-weight:bold;
+    color: beige;
+}
+
+
+@media (max-width: 976px) {
+
+
+    .grid__presentacion{
+        grid-template-areas:
+        "texto   texto    texto"
+        "fulano mengano zutano";
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+
+
+    .eventos__grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+
+    .titulo__sec{
+        line-height: 1;
+    }
+
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        grid-area: navbars;
+    }
+    
+
+    .navbar ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    
+}
+
+@media (max-width: 726px){
+
+
+    audio{
+        display: none;
+    }
+
+
+}
+
+@media (max-width: 427px){
+
+
+    .headers__buscar{
+        display: none;
+    }
+
+
+    .navbar{
+        display: none;
+    }
+
+
+    .imgoptfooter{
+        width: 180px;
+        height: 100px;
+    }
+
+
+}
