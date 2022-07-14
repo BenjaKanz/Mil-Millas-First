@@ -152,7 +152,7 @@ body {
 }
 
 
-.grid__fulano {
+.grid__presentacion-fulano {
     grid-area: fulano;
     display: flex;
     border-bottom: white 2px solid;
@@ -163,12 +163,12 @@ body {
 }
 
 
-.grid__fulano:hover{
+.grid__presentacion-fulano:hover{
     transform: translateY(-10px);
 }
 
 
-.grid__mengano{
+.grid__presentacion-mengano{
     grid-area: mengano;
     display: flex;
     border-bottom: white 2px solid;
@@ -179,13 +179,13 @@ body {
 }
 
 
-.grid__mengano:hover{
+.grid__presentacion-mengano:hover{
     transform: translateY(-10px);
 }
 
 
 
-.grid__zutano{
+.grid__presentacion-zutano{
     grid-area: zutano;
     display: flex;
     border-bottom: white 2px solid;
@@ -196,7 +196,7 @@ body {
 }
 
 
-.grid__zutano:hover{
+.grid__presentacion-zutano:hover{
     transform: translateY(-10px);
 }
 
@@ -214,12 +214,6 @@ body {
     
 }
 
-.imgoptfooter{
-    width: 300px;
-    height: 100px;
-    margin: 10px;
-}
-
 
 .img__fondo{
     background-image: url(./Multimedia/img/flowers.jpg);
@@ -230,6 +224,13 @@ body {
     grid-area: texto;
     margin: 10px 10px;
     color:black;
+}
+
+
+.imgoptfooter{
+    width: 300px;
+    height: 100px;
+    margin: 10px;
 }
 
 

@@ -1,0 +1,88 @@
+.headers{
+    margin: 5px;
+    display: grid;
+    grid-template-areas:
+        "titulo     .         navbars"
+        "redes      musica    buscar";
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,0.3fr);
+
+    &__titulo{
+        display: flex;
+        grid-area: titulo;
+        flex-direction: column;
+
+        &-pr {
+            font-size: 7rem;
+            font-style: italic;
+            line-height: 0.8;
+            color: $bglight;
+        }
+
+        &-sec{
+            font-size: 2rem;
+            line-height: 0.5;
+            margin-left: 10px;
+        }
+    }
+
+    &__redes{
+        display: flex;
+        grid-area: redes;
+        align-items: flex-end;
+
+         img {
+            margin: 0px 10px;
+        
+        }
+    
+    }
+
+    &__musica{
+        display: flex;
+        grid-area: musica;
+        justify-content: center;
+    }
+
+    &__navbar{
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        grid-area: navbars;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            li {
+                margin: 10px;
+                border-bottom: ridge $bgdark 2px;
+
+                a{
+                    font-size: 2rem;
+                    color: $bgdark;
+                }
+
+                :hover {
+                    color: $bglight;
+                }
+            }
+            
+        }
+    }
+
+    &__buscar {
+        display: flex;
+        grid-area: buscar;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__titulo{
+        display: flex;
+        grid-area: titulo;
+        flex-direction: column;
+    }
+
+}

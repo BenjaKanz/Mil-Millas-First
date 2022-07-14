@@ -1,0 +1,22 @@
+{
+  "name": "proyecto",
+  "version": "1.0.0",
+  "description": "**Repositorio acerca de ambientación de eventos**\r ## Mil Millas\r **La ambientacion de eventos es un trabajo de indole artistica exponencial a cambios ciclicos\r es por eso que trabajamos dia a dia con el fin de mantenernos conectados con el lugar y los clientes,\r a la merced del tiempo con el espacio clasificado.**",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass --include-path sass ./sass/index.scss ./css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BenjaKanz/Mil-Millas-First.git"
+  },
+  "author": "Benjamin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BenjaKanz/Mil-Millas-First/issues"
+  },
+  "homepage": "https://github.com/BenjaKanz/Mil-Millas-First#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

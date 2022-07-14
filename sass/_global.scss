@@ -1,0 +1,51 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+
+header {
+    font-family: 'Bree Serif', serif;
+    background-color: $bgred;
+}
+
+
+p {
+    font-size: 1.6rem;
+    letter-spacing: normal;
+    line-height: 1.5;
+    color: #404040;
+}
+
+
+h1{
+    margin-left: 10px;
+}
+
+
+body {
+    font-family: 'Bree Serif', serif;
+    font-family: 'Source Serif Pro', serif;
+    background-color: #1f2124;
+    font-size: 2rem;
+}
+
+.titulos {
+    font-size: 3rem;
+    font-style: italic;
+    background-color: $bgred;
+    border: 5px solid $bgdark;
+    margin: 30px 30px 15px 0px;
+}
+
+.negrita{
+    font-weight: bolder;
+}

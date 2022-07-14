@@ -1,0 +1,139 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+header {
+  font-family: 'Bree Serif', serif;
+  background-color: #A30008; }
+
+p {
+  font-size: 1.6rem;
+  letter-spacing: normal;
+  line-height: 1.5;
+  color: #404040; }
+
+h1 {
+  margin-left: 10px; }
+
+body {
+  font-family: 'Bree Serif', serif;
+  font-family: 'Source Serif Pro', serif;
+  background-color: #1f2124;
+  font-size: 2rem; }
+
+.titulos {
+  font-size: 3rem;
+  font-style: italic;
+  background-color: #A30008;
+  border: 5px solid black;
+  margin: 30px 30px 15px 0px; }
+
+.negrita {
+  font-weight: bolder; }
+
+.headers {
+  margin: 5px;
+  display: grid;
+  grid-template-areas: "titulo     .         navbars" "redes      musica    buscar";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 0.3fr); }
+  .headers__titulo {
+    display: flex;
+    grid-area: titulo;
+    flex-direction: column; }
+    .headers__titulo-pr {
+      font-size: 7rem;
+      font-style: italic;
+      line-height: 0.8;
+      color: beige; }
+    .headers__titulo-sec {
+      font-size: 2rem;
+      line-height: 0.5;
+      margin-left: 10px; }
+  .headers__redes {
+    display: flex;
+    grid-area: redes;
+    align-items: flex-end; }
+    .headers__redes img {
+      margin: 0px 10px; }
+  .headers__musica {
+    display: flex;
+    grid-area: musica;
+    justify-content: center; }
+  .headers__navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    grid-area: navbars; }
+    .headers__navbar ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .headers__navbar ul li {
+        margin: 10px;
+        border-bottom: ridge black 2px; }
+        .headers__navbar ul li a {
+          font-size: 2rem;
+          color: black; }
+        .headers__navbar ul li :hover {
+          color: beige; }
+  .headers__buscar {
+    display: flex;
+    grid-area: buscar;
+    align-items: center;
+    justify-content: center; }
+  .headers__titulo {
+    display: flex;
+    grid-area: titulo;
+    flex-direction: column; }
+
+.grid__presentacion {
+  display: grid;
+  grid-template-areas: "texto  . fulano  mengano  zutano";
+  grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 10px;
+  margin: 20px; }
+  .grid__presentacion-fulano {
+    grid-area: fulano;
+    display: flex;
+    border-bottom: beige 2px solid;
+    flex-direction: column;
+    align-items: center;
+    color: #A30008;
+    transition: transform 0.5s; }
+    .grid__presentacion-fulano :hover {
+      transform: translateY(-10px); }
+  .grid__presentacion-mengano {
+    grid-area: mengano;
+    display: flex;
+    border-bottom: beige 2px solid;
+    flex-direction: column;
+    align-items: center;
+    color: #A30008;
+    transition: transform 0.5s; }
+    .grid__presentacion-mengano :hover {
+      transform: translateY(-10px); }
+  .grid__presentacion-zutano {
+    grid-area: zutano;
+    display: flex;
+    border-bottom: beige 2px solid;
+    flex-direction: column;
+    align-items: center;
+    color: #A30008;
+    transition: transform 0.5s; }
+    .grid__presentacion-zutano :hover {
+      transform: translateY(-10px); }
+
+.flex__img {
+  display: flex;
+  justify-content: center;
+  width: 100%; }
+  .flex__img img {
+    border-radius: 20px; }
