@@ -39,6 +39,11 @@ body {
 }
 
 
+.negrita{
+    font-weight: bolder;
+}
+
+
 .headers{
     margin: 5px;
     display: grid;
@@ -234,9 +239,6 @@ body {
 }
 
 
-.negrita{
-    font-weight: bolder;
-}
 
 
 .imgOption{

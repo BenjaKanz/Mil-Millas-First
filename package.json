@@ -18,5 +18,6 @@
   "homepage": "https://github.com/BenjaKanz/Mil-Millas-First#readme",
   "dependencies": {
     "node-sass": "^7.0.1"
-  }
+  },
+  "devDependencies": {}
 }

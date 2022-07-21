@@ -1,0 +1,18 @@
+.btn-base {
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: black;
+}
+
+.btn-contacto {
+    @extend .btn-base;
+    background-color: $bglight;
+}
+
+
+.btn-acercade {
+    @extend .btn-base;
+    background-color: $bglight;
+}
