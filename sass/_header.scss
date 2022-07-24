@@ -1,5 +1,5 @@
 .headers{
-    margin: 5px;
+    border: solid 1px $bgdark;
     display: grid;
     grid-template-areas:
         "titulo     .         navbars"
@@ -32,7 +32,8 @@
         align-items: flex-end;
 
          img {
-            margin: 0px 10px;
+            margin: 10px 10px;
+        
         
         }
     
@@ -42,6 +43,7 @@
         display: flex;
         grid-area: musica;
         justify-content: center;
+        margin: 10px;
     }
 
     &__navbar{
@@ -57,7 +59,7 @@
 
             li {
                 margin: 10px;
-                border-bottom: ridge $bgdark 2px;
+                border-bottom: ridge $bglight 2px;
 
                 a{
                     font-size: 2rem;

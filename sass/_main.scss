@@ -1,6 +1,17 @@
+// INDEX //
+
+@mixin grid__presentacion-flex{
+    display: flex;
+                flex-direction: column;
+                align-items: center;
+                transition: transform 0.5s;
+                color: $bgred;
+}
+
+
 .grid__presentacion{
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         "texto  . fulano  mengano  zutano";
         grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
         align-items: center;
@@ -9,44 +20,51 @@
 
         &-fulano {
             grid-area: fulano;
-            display: flex;
             border-bottom: $bglight 2px solid;
-            flex-direction: column;
-            align-items: center;
             color: $bgred;
-            transition: transform 0.5s;
+            transition: 0.5s;
 
-            :hover{
+            &:hover{
                 transform: translateY(-10px);
             }
+
+
+            .flex-presentacion{
+                @include grid__presentacion-flex
+            }
+
         }
 
         &-mengano{
             grid-area: mengano;
-            display: flex;
             border-bottom: $bglight 2px solid;
-            flex-direction: column;
-            align-items: center;
             color: $bgred;
-            transition: transform 0.5s;
+            transition: 0.5s;
 
-            :hover{
+            &:hover{
                 transform: translateY(-10px);
             }
+
+            .flex-presentacion{
+                @include grid__presentacion-flex
+            }
+
         }
 
         &-zutano{
             grid-area: zutano;
-            display: flex;
             border-bottom: $bglight 2px solid;
-            flex-direction: column;
-            align-items: center;
             color: $bgred;
-            transition: transform 0.5s;
+            transition: 0.5s;
 
-            :hover{
+            &:hover{
                 transform: translateY(-10px);
             }
+
+            .flex-presentacion{
+                @include grid__presentacion-flex
+            }
+
         }
 
 }
@@ -58,44 +76,80 @@
 
     img {
         border-radius: 20px;
-        
+
     }
 }
 
+// EVENTOS //
 
-@mixin card-base ($alineacion, $fondo) {
+.card{
+    background-color: $bglight2;
+    padding: 20px;
     border-radius: 10px;
-    border: 2px solid black;
-    margin-top: 30px;
-    margin-bottom: 50px;
+    box-shadow: 5px 10px 50px -12px white;
     display: flex;
-    justify-content: $alineacion;
-    background-color: $fondo;
+    justify-content: space-between;
+    flex-direction: column;
+    transition: transform 0.3s;
+
+    
+    &__header{
+        position: relative;
+        
+        small{
+            background-color: rgba(255, 255, 255, 0.5);
+            color: #fff;
+            padding: 5px;
+            position: absolute;
+            border-bottom-left-radius: 8px;
+            right: 0px;
+        }
+        
+        img{
+            width: 100%;
+            border-radius: 25px;
+            margin-bottom: 20px;
+        }
+    }
+    
+    &__title{
+        margin-bottom: 10px;
+    }
+    
+    &__description{
+        margin-bottom: 30px;
+        color: $bgred2;
+    }
+    
+    &__link{
+        font-weight: bold;
+        color: $bgdark;
+        background-color: $bgred;
+        padding: 15px;
+        border-radius: 30px;
+        text-align: center;
+        
+        &:hover{
+            color: $bglight
+        }
+    }
+    
+    
+    &:hover{
+        transform: translateY(-10px) translateX(-5px);
+    }
 }
 
-.card-1{
-    @include card-base(space-evenly, darkred);
 
+.eventos__grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+    margin: 20px;
 }
 
-$redesSociales: (
-    github: #1d1d1d,
-    twitter: #55acee,
-    instagram: #c92d8f,
 
-    ) ;
 
-    @each $nombre, $color in $redesSociales {
 
-    .link-#{$nombre} {
-        margin: 0 5px;
-        padding: 10px;
-        border-radius: 10px;
-        color: $bglight;
-        text-decoration: none;
-        background-color: $color;
-    }
-        
-    }
-        
+
 
