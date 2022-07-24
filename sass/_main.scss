@@ -1,11 +1,12 @@
 // INDEX //
 
+
 @mixin grid__presentacion-flex{
     display: flex;
-                flex-direction: column;
-                align-items: center;
-                transition: transform 0.5s;
-                color: $bgred;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.5s;
+    color: $bglight2;
 }
 
 
@@ -21,7 +22,6 @@
         &-fulano {
             grid-area: fulano;
             border-bottom: $bglight 2px solid;
-            color: $bgred;
             transition: 0.5s;
 
             &:hover{
@@ -38,7 +38,6 @@
         &-mengano{
             grid-area: mengano;
             border-bottom: $bglight 2px solid;
-            color: $bgred;
             transition: 0.5s;
 
             &:hover{
@@ -54,7 +53,6 @@
         &-zutano{
             grid-area: zutano;
             border-bottom: $bglight 2px solid;
-            color: $bgred;
             transition: 0.5s;
 
             &:hover{
@@ -80,7 +78,9 @@
     }
 }
 
+
 // EVENTOS //
+
 
 .card{
     background-color: $bglight2;
@@ -149,7 +149,79 @@
 }
 
 
+// CONTACTO //
+
+
+.contacto{
+    display: flex;
+    justify-content: center;
+    
+    &__grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    &__contenedor{  
+        margin: 50px 50px 50px 10px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    
+        li  {
+            display: flex;
+            align-items: center;
+            font-weight: bolder;
+            color: $bglight;
+        }
+    
+        &-img   {
+            height: 65px;
+            width: 65px;
+            margin: 25px 50px 25px  0px;
+    
+        }
+    }
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+
+    &__container{
+        margin: 50px;
+        margin-left: 10px;
+        padding: 10px;
+
+        h4{
+            margin-bottom: 10px;
+            border-bottom: solid $bglight;
+            color: $bglight;
+        }
+
+    }
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    color: $bglight;
+}
+
+
+// NOSOTROS //
 
 
 
+.iconos__contacto{
+    width: 10rem;
+    height: 10rem;
+}
 
+
+.acerca{
+    background-image:url(./Multimedia/musica-img/orobanner.jpg);
+    background-repeat: repeat;
+    background-size: contain;
+    font-weight:bold;
+    color: beige;
+}

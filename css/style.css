@@ -34,8 +34,9 @@ body {
   border: 3px solid black;
   margin: 30px 30px 15px 0px; }
 
-.negrita {
-  font-weight: bolder; }
+.texto {
+  font-weight: bolder;
+  color: #F2BB9B; }
 
 .headers {
   border: solid 1px black;
@@ -104,7 +105,6 @@ body {
   .grid__presentacion-fulano {
     grid-area: fulano;
     border-bottom: beige 2px solid;
-    color: #A60311;
     transition: 0.5s; }
     .grid__presentacion-fulano:hover {
       transform: translateY(-10px); }
@@ -113,11 +113,10 @@ body {
       flex-direction: column;
       align-items: center;
       transition: transform 0.5s;
-      color: #A60311; }
+      color: #F2BB9B; }
   .grid__presentacion-mengano {
     grid-area: mengano;
     border-bottom: beige 2px solid;
-    color: #A60311;
     transition: 0.5s; }
     .grid__presentacion-mengano:hover {
       transform: translateY(-10px); }
@@ -126,11 +125,10 @@ body {
       flex-direction: column;
       align-items: center;
       transition: transform 0.5s;
-      color: #A60311; }
+      color: #F2BB9B; }
   .grid__presentacion-zutano {
     grid-area: zutano;
     border-bottom: beige 2px solid;
-    color: #A60311;
     transition: 0.5s; }
     .grid__presentacion-zutano:hover {
       transform: translateY(-10px); }
@@ -139,7 +137,7 @@ body {
       flex-direction: column;
       align-items: center;
       transition: transform 0.5s;
-      color: #A60311; }
+      color: #F2BB9B; }
 
 .flex__img {
   display: flex;
@@ -192,6 +190,55 @@ body {
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
   margin: 20px; }
+
+.contacto {
+  display: flex;
+  justify-content: center; }
+  .contacto__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+  .contacto__contenedor {
+    margin: 50px 50px 50px 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; }
+    .contacto__contenedor li {
+      display: flex;
+      align-items: center;
+      font-weight: bolder;
+      color: beige; }
+    .contacto__contenedor-img {
+      height: 65px;
+      width: 65px;
+      margin: 25px 50px 25px  0px; }
+
+.form {
+  display: flex;
+  justify-content: center; }
+  .form__container {
+    margin: 50px;
+    margin-left: 10px;
+    padding: 10px; }
+    .form__container h4 {
+      margin-bottom: 10px;
+      border-bottom: solid beige;
+      color: beige; }
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  color: beige; }
+
+.iconos__contacto {
+  width: 10rem;
+  height: 10rem; }
+
+.acerca {
+  background-image: url(./Multimedia/musica-img/orobanner.jpg);
+  background-repeat: repeat;
+  background-size: contain;
+  font-weight: bold;
+  color: beige; }
 
 .footers {
   background-color: #A60311;

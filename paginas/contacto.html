@@ -59,44 +59,50 @@
     </header>
     <main>
         <h3 class="titulos">Contacto</h3>
-        <ul class="form">
-            <!-- (luego se cambiara por etiqueta "a" con direccion real) -->
-            <li><img class="iconos__contacto" src="../Multimedia/img/MSGorange.png" alt="correoIcon" />milmillasweb@hotmail.com</li>
-            <li><img class="iconos__contacto" src="../Multimedia/img/whaicon.png" alt="whatsappIcon" />+20-3-12092182</li>
-            <li><img class="iconos__contacto" src="../Multimedia/img/Instagram-Icon.png" alt="instaIcon" />www.insta.com/milmillas</li>
-            <li><img class="iconos__contacto" src="../Multimedia/img/Facebook_Logo_(2019).png" alt="faceIcon" />www.face.com/milmillas</li>
-            <li><img class="iconos__contacto" src="../Multimedia/img/twitterlogo.png" alt="twitIcon" />www.twit.com/milmillas</li>
-        </ul>
-        <section class="form">
-            <h4 class="imgfondo">Presupuesta tu Evento</h4>
-            <form action="" method="" enctype="">
-                <label for="nombre">Nombre Completo :</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Ingresar Nombre..." />
-                <br />
-                <label for="correo">Correo :</label>
-                <input type="email" id="correo" name="correo" placeholder="Ingresar Correo..." />
-                <br />
-                <label for="telefono">Telefono :</label>
-                <input type="text" id="telefono" name="telefono" placeholder="Ingresar Telefono" />
-                <br />
-                <label for="evento">Tipo de Evento :</label>
-                <select name="evento" id="evento" >
-                    <option value="bar mitzva">bar mitza</option>
-                    <option value="quince">Quince años</option>
-                    <option value="casamiento">Casamiento</option>
-                    <option value="cumple">Fiesta Cumpleaños</option>
-                </select>
-                <br />
-                <label for="mensaje">Mensaje :</label>
-                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Ingrese su mensaje..."></textarea>
-                <br />
-                <input type="checkbox" id="newsletter" />
-                <label for="newsletter">Recibir noticias de proximos eventos</label>
-                <br />
-                <button type="submit" >Enviar</button>
-                <button type="reset">Limpiar</button>
-            </form>
-        </section>
+        <div class="contacto__grid">
+            <section class="contacto">
+                <ul class="contacto__contenedor">
+                    <!-- (luego se cambiara por etiqueta "a" con direccion real) -->
+                    <li><img class="contacto__contenedor-img" src="../Multimedia/img/MSGorange.png" alt="correoIcon" />milmillasweb@hotmail.com</li>
+                    <li><img class="contacto__contenedor-img" src="../Multimedia/img/whaicon.png" alt="whatsappIcon" />+20-3-12092182</li>
+                    <li><img class="contacto__contenedor-img" src="../Multimedia/img/Instagram-Icon.png" alt="instaIcon" />www.insta.com/milmillas</li>
+                    <li><img class="contacto__contenedor-img" src="../Multimedia/img/Facebook_Logo_(2019).png" alt="faceIcon" />www.face.com/milmillas</li>
+                    <li><img class="contacto__contenedor-img" src="../Multimedia/img/twitterlogo.png" alt="twitIcon" />www.twit.com/milmillas</li>
+                </ul>
+            </section>
+            <section class="form">
+                <div class="form__container">
+                    <h4>Presupuesta tu Evento :</h4>
+                    <form class="formulario" action="" method="" enctype="">
+                        <label for="nombre">Nombre Completo :</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingresar Nombre..." />
+                        <br />
+                        <label for="correo">Correo :</label>
+                        <input type="email" id="correo" name="correo" placeholder="Ingresar Correo..." />
+                        <br />
+                        <label for="telefono">Telefono :</label>
+                        <input type="text" id="telefono" name="telefono" placeholder="Ingresar Telefono..." />
+                        <br />
+                        <label for="evento">Tipo de Evento :</label>
+                        <select name="evento" id="evento" >
+                            <option value="bar mitzva">bar mitza</option>
+                            <option value="quince">Quince años</option>
+                            <option value="casamiento">Casamiento</option>
+                            <option value="cumple">Fiesta Cumpleaños</option>
+                        </select>
+                        <br />
+                        <label for="mensaje">Mensaje :</label>
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Ingrese su mensaje..."></textarea>
+                        <br />
+                        <input type="checkbox" id="newsletter" />
+                        <label for="newsletter">Recibir noticias de proximos eventos</label>
+                        <br />
+                        <button type="submit" >Enviar</button>
+                        <button type="reset">Limpiar</button>
+                    </form>
+                </div>
+            </section>
+        </div>
     </main>
     <footer>
         <div class="footers">
