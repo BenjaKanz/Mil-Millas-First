@@ -1,4 +1,6 @@
-.footers {
+.footers{
+
+
 
     background-color: $bgred;
     border-top: solid $bgdark 2px;
@@ -14,15 +16,7 @@
             color: $bgdark;
             margin: 5px;
             border-bottom: solid 2px $bgdark;  
-            
-            :hover{
-                transform: rotateY(-5px);
-            }
-        }
 
-        li{
-        }
-        
-    }
-
-        }
+            }   
+        }  
+}

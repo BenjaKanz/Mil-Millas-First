@@ -292,5 +292,3 @@ body {
     color: black;
     margin: 5px;
     border-bottom: solid 2px black; }
-    .footers__links a :hover {
-      transform: rotateY(-5px); }
