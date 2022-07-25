@@ -6,10 +6,23 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    color: black;
 
-    &__links {
 
-        color: $bgdark;
+    &__links{
+    
+        a{
+            color: $bgdark;
+            margin: 5px;
+            border-bottom: solid 2px $bgdark;  
+            
+            :hover{
+                transform: rotateY(-5px);
             }
+        }
+
+        li{
+        }
+        
+    }
+
         }

@@ -106,6 +106,8 @@ body {
     grid-area: fulano;
     border-bottom: beige 2px solid;
     transition: 0.5s; }
+    .grid__presentacion-fulano img {
+      border-radius: 10px; }
     .grid__presentacion-fulano:hover {
       transform: translateY(-10px); }
     .grid__presentacion-fulano .flex-presentacion {
@@ -120,6 +122,8 @@ body {
     transition: 0.5s; }
     .grid__presentacion-mengano:hover {
       transform: translateY(-10px); }
+    .grid__presentacion-mengano img {
+      border-radius: 10px; }
     .grid__presentacion-mengano .flex-presentacion {
       display: flex;
       flex-direction: column;
@@ -132,6 +136,8 @@ body {
     transition: 0.5s; }
     .grid__presentacion-zutano:hover {
       transform: translateY(-10px); }
+    .grid__presentacion-zutano img {
+      border-radius: 10px; }
     .grid__presentacion-zutano .flex-presentacion {
       display: flex;
       flex-direction: column;
@@ -240,13 +246,51 @@ body {
   font-weight: bold;
   color: beige; }
 
+.nosotros {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); }
+  .nosotros__contenedor {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+    .nosotros__contenedor h4 {
+      border-bottom: solid 2px beige;
+      color: beige;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px; }
+    .nosotros__contenedor p {
+      margin: 10px;
+      color: #F2BB9B; }
+    .nosotros__contenedor img {
+      display: flex;
+      justify-content: center;
+      border-radius: 10px; }
+
+.somos {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .somos h3 {
+    margin-bottom: 10px;
+    color: beige;
+    border-bottom: solid 2px beige; }
+  .somos p {
+    color: #F2BB9B; }
+
 .footers {
   background-color: #A60311;
   border-top: solid black 2px;
   margin-top: 50px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  color: black; }
-  .footers__links {
-    color: black; }
+  justify-content: space-evenly; }
+  .footers__links a {
+    color: black;
+    margin: 5px;
+    border-bottom: solid 2px black; }
+    .footers__links a :hover {
+      transform: rotateY(-5px); }

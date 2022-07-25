@@ -24,6 +24,10 @@
             border-bottom: $bglight 2px solid;
             transition: 0.5s;
 
+            img{
+                border-radius: 10px;
+            }
+
             &:hover{
                 transform: translateY(-10px);
             }
@@ -44,6 +48,10 @@
                 transform: translateY(-10px);
             }
 
+            img{
+                border-radius: 10px;
+            }
+
             .flex-presentacion{
                 @include grid__presentacion-flex
             }
@@ -57,6 +65,10 @@
 
             &:hover{
                 transform: translateY(-10px);
+            }
+
+            img{
+                border-radius: 10px;
             }
 
             .flex-presentacion{
@@ -76,7 +88,9 @@
         border-radius: 20px;
 
     }
+
 }
+
 
 
 // EVENTOS //
@@ -224,4 +238,56 @@
     background-size: contain;
     font-weight:bold;
     color: beige;
+}
+
+
+// NOSOTROS //@at-root
+
+
+.nosotros{
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+    &__contenedor{
+        margin: 10px;
+        display: flex;   
+        align-items: center;
+        flex-direction: column;
+
+        h4{
+            border-bottom: solid 2px $bglight;
+            color: $bglight;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        p{
+            margin: 10px;
+            color: $bglight2;
+        }
+        img{
+            display: flex;
+            justify-content: center;
+            border-radius: 10px;
+        }
+    }
+}
+
+.somos{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3{
+        margin-bottom: 10px;
+        color: $bglight ;
+        border-bottom: solid 2px $bglight;
+    }
+
+    p{
+        color: $bglight2;
+    }
 }
