@@ -39,6 +39,8 @@ body {
   color: #F2BB9B; }
 
 .headers {
+  height: 100%vw;
+  margin: 0px;
   border: solid 1px black;
   display: grid;
   grid-template-areas: "titulo     .         navbars" "redes      musica    buscar";
@@ -151,6 +153,9 @@ body {
   width: 100%; }
   .flex__img img {
     border-radius: 20px; }
+
+.texto {
+  grid-area: texto; }
 
 .card {
   background-color: #F2BB9B;
@@ -288,7 +293,44 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly; }
+  .footers__img {
+    margin: 30px;
+    border-radius: 10px;
+    border: solid 1px black; }
   .footers__links a {
     color: black;
     margin: 5px;
     border-bottom: solid 2px black; }
+
+@media (min-width: 977px) {
+  .icono {
+    display: none; } }
+
+@media (max-width: 1002px) {
+  .headers__titulo-sec {
+    line-height: 1; } }
+
+@media (max-width: 976px) {
+  .grid__presentacion {
+    grid-template-areas: "texto   texto    texto" "fulano mengano zutano";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr); }
+  .eventos__grid {
+    grid-template-columns: repeat(2, 1fr); }
+  .headers__titulo-sec {
+    line-height: 1; }
+  .headers__navbar ul {
+    display: none; }
+  .headers__navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 20px 30px 0px 0px; } }
+
+@media (max-width: 768px) {
+  audio {
+    display: none; } }
+
+@media (max-width: 520px) {
+  .footers {
+    flex-direction: column; } }

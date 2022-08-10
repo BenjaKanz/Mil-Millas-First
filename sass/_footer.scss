@@ -10,6 +10,12 @@
     justify-content: space-evenly;
 
 
+    &__img{
+        margin: 30px;
+        border-radius: 10px;
+        border: solid 1px black;
+    }
+
     &__links{
     
         a{

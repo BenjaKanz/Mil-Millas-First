@@ -7,3 +7,76 @@
 @import 'main';
 
 @import 'footer';
+
+
+@media (min-width: 977px) {
+
+    .icono{
+        display: none;
+    }
+}
+
+@media (max-width: 1002px) {
+
+    .headers__titulo-sec{
+        line-height: 1;
+    }
+
+}
+
+@media (max-width: 976px) {
+
+    .grid__presentacion{
+        grid-template-areas:
+        "texto   texto    texto"
+        "fulano mengano zutano";
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+
+    .eventos__grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .headers__titulo-sec{
+        line-height: 1;
+    }
+
+    .headers__navbar {
+
+        ul{
+            display: none;
+        }
+    }
+
+    .headers__navbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin: 20px 30px 0px 0px;
+    }
+    
+}
+
+
+
+
+@media (max-width: 768px){
+
+
+    audio{
+        display: none;
+    }
+
+
+}
+
+@media (max-width: 520px){
+
+    .footers{
+        flex-direction: column;
+    }
+
+
+
+}

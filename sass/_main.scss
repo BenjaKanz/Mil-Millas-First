@@ -1,6 +1,7 @@
 // INDEX //
 
 
+
 @mixin grid__presentacion-flex{
     display: flex;
     flex-direction: column;
@@ -89,6 +90,11 @@
 
     }
 
+}
+
+.texto{
+
+    grid-area: texto;
 }
 
 

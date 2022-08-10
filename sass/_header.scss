@@ -1,4 +1,6 @@
 .headers{
+    height: 100%vw;
+    margin: 0px;
     border: solid 1px $bgdark;
     display: grid;
     grid-template-areas:
@@ -51,6 +53,7 @@
         flex-direction: column;
         align-items:flex-start;
         grid-area: navbars;
+
 
         ul {
             display: flex;
